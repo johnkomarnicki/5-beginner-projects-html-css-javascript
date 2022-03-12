@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1 - Countdown Timer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="countdown-creator">
+      <div class="input">
+        <label for="date-selector">Select Date</label>
+        <input type="date" class="date-selector" id="date-selector" />
+      </div>
+      <div class="input">
+        <label for="event-title">Event Title</label>
+        <input type="text" class="event-title" id="event-title" />
+      </div>
+      <button class="create-countdown">Create Countdown</button>
+    </div>
+    <div class="countdown-wrap display-none">
+      <h1 class="countdown-title"></h1>
+      <div class="countdown">
+        <div>
+          <h2>Days</h2>
+          <p class="days"></p>
+        </div>
+        <div>
+          <h2>Hours</h2>
+          <p class="hours"></p>
+        </div>
+        <div>
+          <h2>Minutes</h2>
+          <p class="minutes"></p>
+        </div>
+        <div>
+          <h2>Seconds</h2>
+          <p class="seconds"></p>
+        </div>
+      </div>
+      <button class="clear-event">Clear Event</button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
